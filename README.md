@@ -1,83 +1,85 @@
-# 🌐 TimeZona - ASP.NET MVC Demo Project
+# 🚀 ASP.NET MVC
 
-Welcome to the **TimeZona** repository! This is a DEMO project in ASP.NET MVC specifically designed for beginners to demonstrate core backend concepts, routing, and database management using Microsoft's ASP.NET MVC framework and C#.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![.NET](https://img.shields.io/badge/.NET-5C2D91?style=flat&logo=dotnet&logoColor=white)](#)
+[![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white)](#)
 
-## 👨🏼‍💻 About the Developer & Motivation
+Bu depo, C# ve ASP.NET MVC (Model-View-Controller) mimarisi kullanılarak geliştirilen web uygulamalarını, temel yapı taşlarını ve örnek projeleri içermektedir.
 
-I have been trying to improve myself since I graduated from Ankara University Computer Engineering. For this, I attend courses from online platforms. I have about 6 months of experience on Ruby on Rails as a Full Stack Developer. I am currently trying to improve myself in Front-end and Back-end. The courses I take are on these topics and I develop projects on my own. This repository is a practical project I developed to expand my backend skills into the .NET ecosystem!
-
-## ✨ Features
-
-*   **MVC Architecture:** Clean separation of application logic (Controllers), data (Models), and user interface (Views).
-*   **CRUD Operations:** Full Create, Read, Update, and Delete functionality for application entities.
-*   **Database Integration:** Utilizes MS SQL Server with a pre-configured `.bacpac` data tier application.
-*   **Admin Panel:** Built-in dashboard for administrative management.
-*   **Routing:** Standardized and clean URL routing configurations.
-
-## 🛠️ Tech Stack
-
-*   **Language:** C#
-*   **Framework:** ASP.NET MVC
-*   **Database:** MS SQL Server
-*   **Frontend:** Razor Views (.cshtml), HTML5, CSS3
-*   **IDE:** Visual Studio
-*   **Version Control:** Git & GitHub
-
-## 🚀 Getting Started
-
-Follow these instructions to set up the database and run the TimeZona project on your local machine.
-
-### Prerequisites
-
-Ensure you have the following installed on your system:
-*   [Visual Studio](https://visualstudio.microsoft.com/)
-*   MS SQL Server (SQL Server Management Studio - SSMS)
-*   Git
-
-### Installation & Database Setup
-
-1.  **Clone the repository:**
-    
-    ```bash
-    git clone https://github.com/halukcansarioz/Asp.Net-Mvc.git
-    cd Asp.Net-Mvc
-    ```
-
-2.  **Database Part (TimeZona):**
-    *   First, open MS SQL Server and create a new database named: `TimeZona`
-    *   In order to use the pre-filled database, you need to import/run the `TimeZona.bacpac` file included in this project repository.
-    *   *Need help importing a .bacpac file?* You can get help from this tutorial video: **[Watch how to import .bacpac in MSSQL](https://www.youtube.com/watch?v=4aTq2ayHEJ0&t=1s&ab_channel=Rumeysa)**
-
-3.  **Configure Connection Strings:**
-    *   Open the project solution in Visual Studio.
-    *   Navigate to the `Web.Config` file.
-    *   Make changes to the `ConnectionStrings` section to match your local MS SQL Server credentials and instance name.
-
-4.  **Run the Application:**
-    After making changes in the connection strings, press `F5` or click the **Start** button in Visual Studio to run this project.
-
-### 🔐 Admin Panel Access
-
-To access the administrative features of the application, use the following default credentials:
-
-*   **UserID:** `Admin`
-*   **Password:** `12345`
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! 
-Feel free to check the [issues page](https://github.com/halukcansarioz/Asp.Net-Mvc/issues) if you want to contribute.
-
-## 📜 License
-
-This project is open-source and available under the MIT License - see the LICENSE file for details.
-
-## 📫 Contact
-
-**Haluk Can Sarıöz**
-*   **GitHub:** [@HalukCanSarioz](https://github.com/HalukCanSarioz)
-*   **Email:** halukcansarioz19@gmail.com
-*   **LinkedIn:** [Haluk Can Sarıöz](https://www.linkedin.com/in/halukcansarioz)
+## 📚 İçindekiler
+- [Proje Hakkında](#proje-hakkında)
+- [Öğrenim Çıktıları](#öğrenim-çıktıları)
+- [Geliştirme Süreci](#geliştirme-süreci)
+- [Kurulum ve Kullanım](#kurulum-ve-kullanım)
+- [Katkıda Bulunma](#katkıda-bulunma)
+- [Lisans](#lisans)
 
 ---
-*If this ASP.NET MVC beginner demo helped you, please consider giving the repository a ⭐!*
+
+## 💻 Proje Hakkında
+Bu proje, modern web uygulamaları geliştirmek için kullanılan ASP.NET MVC deseninin çalışma mantığını kavramak, veri tabanı entegrasyonlarını sağlamak ve katmanlı mimari standartlarına uygun, ölçeklenebilir kod yazma becerisini geliştirmek amacıyla oluşturulmuştur.
+
+## 🗂 Öğrenim Çıktıları
+Bu depodaki çalışmalar genel olarak aşağıdaki konuları kapsamaktadır:
+* **MVC Mimarisi:** Model, View ve Controller arasındaki iletişim ve veri akışı.
+* **Razor Syntax:** `.cshtml` sayfalarında C# kodlarının kullanımı ve arayüz entegrasyonu.
+* **Routing:** URL yönlendirmelerinin yapılandırılması (RouteConfig).
+* **Veri Yönetimi ve Validasyon:** Data Annotations ile model doğrulama işlemleri.
+* **CRUD İşlemleri:** Veritabanı üzerinde Ekleme, Okuma, Güncelleme ve Silme işlemleri.
+* **Layout ve Partial Views:** Tekrar kullanılabilir sayfa yapıları ve taslak (master page) mantığı.
+
+---
+
+## 🛠 Geliştirme Süreci
+
+Projeye yeni bir çalışma eklerken veya mevcut kodları güncellerken aşağıdaki adımları takip edebilirsiniz:
+
+### 1. Forklama
+Öncelikle depoyu kendi GitHub hesabınıza fork'layın.
+
+### 2. Yeni Dal (Branch) Oluşturma
+Her yeni çalışma veya düzeltme için yeni bir dal oluşturmak düzeni korur. Terminalde şu komutu kullanın:
+
+```
+git checkout -b ozellik/yeni-mvc-projesi
+```
+
+### 3. Kodları Gönderme (Push)
+Değişikliklerinizi yaptıktan ve commit'ledikten sonra, hazırladığınız dalı GitHub'a göndermek için:
+
+```
+git push origin ozellik/yeni-mvc-projesi
+```
+
+---
+
+## 💻 Kurulum ve Kullanım
+
+1. Depoyu klonlayın:
+
+```
+git clone https://github.com/halukcansarioz/Asp.Net-Mvc.git
+```
+
+2. Proje dizinine gidin:
+
+```
+cd Asp.Net-Mvc
+```
+
+3. Projeyi Açın: Klasör içerisindeki `.sln` (Solution) dosyasına tıklayarak projeyi Visual Studio ortamında açabilir ve çalıştırabilirsiniz (`F5` veya `Ctrl+F5`).
+
+---
+
+## 🤝 Katkıda Bulunma
+
+1. Bu depoyu Fork'layın.
+2. **Branch oluşturun** (`git checkout -b feature/controller-eklentisi`).
+3. Değişikliklerinizi yapın ve commit edin.
+4. **Kodlarınızı Push'layın** (`git push origin feature/controller-eklentisi`).
+5. Bir Pull Request açın.
+
+---
+
+## 📜 Lisans
+Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır. Dilediğiniz gibi inceleyebilir ve çalışmalarınızda faydalanabilirsiniz.
